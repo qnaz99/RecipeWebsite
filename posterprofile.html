@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style-latest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Proflie</title>
+</head>
+
+<body style="background-color: white;">
+    <!--NAVBAR-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.html">Recipe Website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#recipes">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Create Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!--CONTENT-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="profile-header">
+                <div class="profile-header-img">
+                    <div class="circle">
+                        <img class="profile-pic" id="p_pic" src="img/profile.png" style="width: 115px; height: 115px;">
+                    </div>
+                    <div class="p-image">
+                        <i class="fa fa-camera upload-button"></i>
+                        <input class="file-upload" type="file" accept="image/*" />
+                    </div>
+                </div>
+                <div class="profile-header-name">
+                    <h4>Judy</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container favourites">
+        <div class="row">
+            <h2 style="padding-top: 30px;">Favourites</h2>
+        </div>
+        <div class="row">
+                <br><br>
+                <div class="col-lg-4 d-flex">
+                    <div class="card mb-4 box-shadow flex-fill">
+                        <img class="card-img-top" src="./img/lasagna.jpg" alt="Salad">
+                        <div class="card-body">
+                            <h2 class="card-title">Lasagna</h2>
+                            <p class="card-text">Homemade lasagna full of pasta, ricotta, a homemade meat sauce, and tons of cheese</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" onclick="window.location.href='lasagna.html'"class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+                                </div>
+                                <small class="text-muted">3 hrs</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <div class="card mb-4 box-shadow flex-fill">
+                        <img class="card-img-top" src="./img/pho.jpg" alt="Salad">
+                        <div class="card-body">
+                            <h2 class="card-title">Pho Noodle</h2>
+                            <p class="card-text">This unbelievably delicious Vietnamese pho recipe tastes just like the restaurant version, and it’s easy to make with your choice of beef, chicken, pork or shrimp.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button"onclick="window.location.href='pho-noodle.html'" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+                                </div>
+                                <small class="text-muted">12 hours</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <div class="card mb-4 box-shadow flex-fill">
+                        <img class="card-img-top" src="./img/salad2.jpg" alt="Salad">
+                        <div class="card-body">
+                            <h2 class="card-title">Salads</h2>
+                            <p class="card-text">Healthy, easy to make and delicious salad recipes made by you!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" onclick="window.location.href='italiansalad.html'" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+                                </div>
+                                <small class="text-muted">15 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="container reviews">
+        <div class="row">
+            <h2>Reviews</h2>
+        </div>
+        <div class="row">
+            <div class="profile-reviews">
+                <p>No reviews yet!</p><br>
+            </div>
+    </div>
+    </div>
+        
+        
+
+        <!--FOOTER-->
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; A Recipe Website 2020</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var readURL = function (input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('.profile-pic').attr('src', e.target.result);
+                        }
+
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+
+
+                $(".file-upload").on('change', function () {
+                    readURL(this);
+                });
+
+                $(".upload-button").on('click', function () {
+                    $(".file-upload").click();
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

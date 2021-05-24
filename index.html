@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Recipe Website</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+          body {
+      min-height: 100vh;
+      position: relative;
+      margin: 0;
+      padding-bottom: 100px;
+      box-sizing: border-box;
+    }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .btn-view{
+        border-color:rgb(90, 107, 90);
+        background-color:rgb(9, 49, 9);
+        color: white;
+      }
+      /* .fixed-bottom {
+        position: fixed;
+        margin: auto;
+        height: 100px;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+} */
+     
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+      }
+      
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">Recipe Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#recipes">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Create Recipe</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div style="width: 100%; height: 800px; background-color: rgb(90, 107, 90); text-align: center;">
+          <img src="./img/pho.jpg" alt="pho noodles" height="800px" >	
+        </div>
+        <div class="container">
+          <div class="carousel-caption">
+            <!-- <span class="highlight-text"><h1>Pho Noodles</h1></span> -->
+            <p><a class="btn btn-lg btn-view" href="pho-noodle.html" role="button">View "Pho Noodle"</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="80%"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="80%" fill="#777"/>
+		<img src="./img/pastasalad.jpg" alt="pasta salad" width="500px" height="500px">	
+      </svg> -->
+      <div style="width: 100%; height: 800px; background-color:rgb(90, 107, 90); text-align: center;">
+        <img src="./img/pastasalad.jpg" alt="pasta salad" height="800px" >	
+      </div>
+        <div class="container">
+          <div class="carousel-caption">            
+            <p><br><a class="btn btn-lg btn-view" href="pastasalad.html" role="button">View "Pasta Salad"</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div style="width: 100%; height: 800px; background-color: rgb(90, 107, 90); text-align: center;">
+          <img src="./img/chocomousse.jpg" alt="choco mousse" height="800px" >	
+        </div>
+        <div class="container">
+          <div class="carousel-caption">
+            <p><a class="btn btn-lg btn-view" href="chocomousse.html" role="button">View "Choco Mousse"</a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div id = "recipes" class="row">
+      <div class="col-lg-4 d-flex">
+        <div class="card mb-4 box-shadow flex-fill">
+          <img class="card-img-top" src="./img/salad2.jpg" alt="Salad">
+          <div class="card-body">
+            <h2 class="card-title">Salads</h2>
+            <p class="card-text">Healthy, easy to make and delicious salad recipes made by you!</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button"  onclick="window.location.href='italiansalad.html'" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+              </div>
+              <small class="text-muted">15 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="card mb-4 box-shadow flex-fill">
+          <img class="card-img-top" src="./img/sushi.jpg" alt="Sushi">
+          <div class="card-body">
+            <h2 class="card-title">Maki Sushi</h2>
+            <p class="card-text">Sushi rolls, or ‘makizushi’ in Japanese, are what most non-Japanese people think of when they think of sushi.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" onclick="window.location.href='sushi.html'" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+              </div>
+              <small class="text-muted">1 hr</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="card mb-4 box-shadow flex-fill">
+          <img class="card-img-top" src="./img/burger.jpg" alt="Burger">
+          <div class="card-body">
+            <h2 class="card-title">Burger</h2>
+            <p class="card-text">Craving a burger?  Try this recipe with healthy ingredients!</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" onclick="window.location.href='burger.html'" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+              </div>
+              <small class="text-muted">2 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="card mb-4 box-shadow flex-fill">
+          <img class="card-img-top" src="./img/pannacotta.jpg" alt="Panna Cotta">
+          <div class="card-body">
+            <h2 class="card-title">Panna Cotta</h2>
+            <p class="card-text">Favorite Italian dessert! Tastes like nothing but fresh milk and cream, plus whatever aromatics or seasonings you choose to add...</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" onclick="window.location.href='pannacotta.html'" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+              </div>
+              <small class="text-muted">30 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="card mb-4 box-shadow flex-fill">
+          <img class="card-img-top" src="./img/ramen.jpg" alt="Ramen">
+          <div class="card-body">
+            <h2 class="card-title">Chicken Ramen</h2>
+            <p class="card-text">Not "traditional" ramen, a hearty warm umami broth with  chicken, egg, and veggies ramen!</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" onclick="window.location.href='chicken-ramen.html'" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+              </div>
+              <small class="text-muted">1 hr</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="card mb-4 box-shadow flex-fill">
+          <img class="card-img-top" src="./img/lasagna.jpg" alt="Lasagna">
+          <div class="card-body">
+            <h2 class="card-title">Lasagna</h2>
+            <p class="card-text">Homemade lasagna full of pasta, ricotta, a homemade meat sauce, and tons of cheese.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" onclick="window.location.href='lasagna.html'"class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
+              </div>
+              <small class="text-muted">3 hrs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row-reverse mb-5">
+      <a href="#"><large class="text-success" >See more >></large></a>
+    </div>
+  </div><!-- /.container -->
+
+ <!-- Footer -->
+ <footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; A Recipe Website 2020</p>
+  </div>
+  <!-- /.container -->
+</footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="./bootstrap/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/bootstrap/assets/js/vendor/popper.min.js"></script>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- <script src=".bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+div.nav ul li {
+	list-style: none;
+	float: left;
+    font-size: 93%;
+    width: 45%;
+}
+
+@media screen and (max-width: 620px) {
+	div.firsthalf{
+        width: auto;
+        float: center;
+    }
+    div.secondhalf{
+        width: auto;
+        float: center;
+    }
+}

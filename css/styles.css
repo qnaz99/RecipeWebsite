@@ -1,0 +1,89 @@
+div.header {
+	background-color: #d6d9f7;
+    padding: 40px 0;
+}
+
+
+
+div.nav ul {
+	margin: 0;
+    padding: 0;
+    background-color: #d6d9f7;
+}
+
+div.preheader{
+    display: block;
+    float:left;
+    background-color: #9ba0dd;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+div.nav ul li a:link,
+div.nav ul li a:visited {
+    display: block;
+	padding: 10px 15px;
+    border-right: 1px solid #bababa;
+    background-color: #9ba0dd;
+}
+
+div.nav ul li {
+	list-style: none;
+	float: left;
+    font-size: 93%;
+    width: 24%;
+}
+
+
+div.firsthalf{
+    width: 45%;
+	float: left;
+	margin-right: 5%;
+}
+div.secondhalf{
+    width: 45%;
+    float: right;
+}
+
+body {
+    text-align: center;
+    background-color: #f2f3ff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+    display: inline-block;
+    background-color: white;
+    padding: 40px;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+input {
+    width: 375px;
+    height: 25px;
+}
+
+button{
+    width: 375px;
+    height: 25px;
+}
+
+ul {
+    text-align: center;
+    }
+    
+li {
+    list-style: none;
+    padding: 5px;
+    display: inline-block;
+}

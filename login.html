@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style-latest.css">
+    <title>Login</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Recipe Website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#recipes">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Create Recipe</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+  
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+    <div class="row" style="margin-top: 100px;">
+        <div class="col-sm-1 col-md-3 col-lg-4 ">
+        </div>
+            <div class="card col-sm-10 col-md-6 col-lg-4 mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">LOGIN to your account</h5>
+                  <form method = "POST" action="./backend/api/login.php">
+                    <div class="form-group">
+                      <label class="main-label">Username</label>
+                      <input type="username" class="form-control" name="user_name" placeholder="Enter your username" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="main-label">Password</label>
+                      <input type="password" class="form-control" placeholder="Enter your password" name="user_password" required>
+                      <br>
+                    </div>
+                     <div class="submit-button">
+                        <button type="submit" class="btn btn-primary" >Log in</button>
+                     </div>
+                  </form>
+                  <br>
+                  <p class ="link-login">
+                     <!-- Password? <a href="#">Click here</a> -->
+                     <br>
+                 Don't have an account yet?  <a href="signup.html">Create Account</a></p>
+                </div>            
+        </div>
+        <div class="col-sm-1 col-md-3 col-lg-4">
+        </div>
+    </div>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; A Recipe Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer> 
+</body>
+</html>
